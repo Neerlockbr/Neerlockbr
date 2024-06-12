@@ -1,3 +1,5 @@
+aluno = input('Digite seu nome: ')
+curso = input('Digite o nome do curso: ')
 n1 = float(input('Digite a Primeira nota: '))
 n2 = float(input('Digite a Segunda nota: '))
 n3 = float(input('Digite a Terceira nota: '))
@@ -17,11 +19,18 @@ print('A sua média foi {:.1f}'.format(m))
 if m >= 6.0:
     if faltas <= limite_faltas:
         print('Sua média foi boa! PARABÉNS!')
+        print('Nome do aluno: {}'.format(aluno))
+        print('Nome do curso: {}'.format(curso))
     else:
         print('Reprovado por faltas. Faltas: {}, Limite de faltas: {}'.format(faltas, limite_faltas))
+
+        print('Nome do aluno: {}'.format(aluno))
+        print('Nome do curso: {}'.format(curso))
 else:
     print('Sua média foi ruim! ESTUDE MAIS!')
     if faltas > limite_faltas:
         print('Além disso, você foi reprovado por faltas. Faltas: {}, Limite de faltas: {}'.format(faltas, limite_faltas))
-
+        print('Nome do aluno: {}'.format(aluno))
+        print('Nome do curso: {}'.format(curso))
+        
 
